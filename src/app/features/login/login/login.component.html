@@ -1,0 +1,63 @@
+<div class="h-screen flex items-center justify-center">
+  
+  <form class="mx-auto flex w-full max-w-lg flex-col rounded-xl bg-backgroundSecondary p-4 sm:p-20">
+    <div class="flex w-full flex-col gap-2">
+      <p class="text-center text-lg">Sign in with</p>
+      <div class="flex w-full flex-col gap-2">
+        <sign-in-with-button class="gap-2" label="Sign up with google">
+          <google-svg svg-icon></google-svg>
+        </sign-in-with-button>
+        
+        <sign-in-with-button class="gap-2" label="Sign up with twitter">
+          <twitter-svg svg-icon></twitter-svg>
+        </sign-in-with-button>
+ 
+        <sign-in-with-button class="btn" label="Sign up with github">
+            <github-svg svg-icon></github-svg>
+        </sign-in-with-button>
+      </div>
+    </div>
+    <div class="divider my-6 text-xs text-content2">or continue with</div>
+  
+    <div class="w-full flex flex-col">
+      <label class="w-full">
+        <div class="label">
+          <span class="label-text text-base">Email</span>
+          <!-- <span class="label-text-alt">Top Right label</span> -->
+        </div>
+        <input type="text" placeholder="your-email@domain.com" class="input input-bordered w-full" />
+        <div class="label">
+          <span class="label-text-alt">Bottom Left label</span>
+          <!-- <span class="label-text-alt">Bottom Right label</span> -->
+        </div>
+      </label>
+      
+      <label class="w-full">
+        <div class="label">
+          <span class="label-text text-base">Password</span>
+          <!-- <span class="label-text-alt">Top Right label</span> -->
+        </div>
+        <input type="password" placeholder="*******" class="input input-bordered w-full" />
+        <div class="label">
+          <!-- <span class="label-text-alt">Bottom Left label</span> -->
+          <!-- <span class="label-text-alt">Bottom Right label</span> -->
+        </div>
+      </label>
+ 
+        <div class="justify-between">
+          <div class="flex gap-2">
+            <input type="checkbox" checked="checked" class="checkbox" />
+            <a href="#">Remember me</a>
+          </div>
+        </div>
+ 
+      <div class="pt-5">
+        <div class="justify-between">
+          <button type="button" class="btn btn-primary w-full">Sign in</button>
+        </div>
+      </div>
+  
+
+    </div>
+  </form>
+</div>
