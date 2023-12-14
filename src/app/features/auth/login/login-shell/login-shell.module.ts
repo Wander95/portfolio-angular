@@ -3,6 +3,6 @@ import { LoginShellRoutingModule } from "./login-shell-routing.module";
 
 
 NgModule({
-  imports: [ LoginShellRoutingModule]
+  imports: [ LoginShellRoutingModule ]
 })
 export class LoginShellModule {}

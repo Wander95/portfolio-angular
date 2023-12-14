@@ -1,7 +1,7 @@
 import { Component, HostBinding, Input } from '@angular/core';
 
 @Component({
-  selector: 'sign-in-with-button,[sign-in-with-button',
+  selector: 'sign-in-with-button',
   standalone: true,
   imports: [],
   templateUrl: './sign-in-with-button.component.html',
@@ -9,7 +9,14 @@ import { Component, HostBinding, Input } from '@angular/core';
 })
 export class SignInWithButtonComponent {
   @HostBinding('class')
-  @Input() label: string = 'nothing defined here'
-  
-  private twClasses = 'bg-sky-500'
+  @Input()
+  label: string = 'nothing defined here';
+
+  @Input() onClick: () => void = () => {};
+
+  private twClasses = 'bg-sky-500';
+
+  onButtonClick() {
+    this.onClick();
+  }
 }
