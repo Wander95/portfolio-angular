@@ -12,11 +12,12 @@ export class SignInWithButtonComponent {
   @Input()
   label: string = 'nothing defined here';
 
-  @Input() onClick: () => void = () => {};
+  @Input() onButtonClick: any = () => {};
 
-  private twClasses = 'bg-sky-500';
+  constructor() {}
 
-  onButtonClick() {
-    this.onClick();
+  onCLick() {
+    this.onButtonClick();
   }
+  private twClasses = 'bg-sky-500';
 }
